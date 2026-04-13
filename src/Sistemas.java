@@ -24,7 +24,7 @@ public class Sistemas {
                 System.out.println("Error: salario no válido.");
             }
 
-        } while (salarioM < 0);
+        } while (salarioM <= 0);
 
         return new Empleado(nombre, apellidoP, salarioM);
     }
@@ -43,7 +43,7 @@ public class Sistemas {
                 System.out.println("Error: salario no válido.");
             }
 
-        } while (salarioM < 0);
+        } while (salarioM <= 0);
 
         return new Empleado(nombre, apellidoP, salarioM);
     }
