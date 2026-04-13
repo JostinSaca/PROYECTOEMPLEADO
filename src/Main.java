@@ -12,8 +12,8 @@ public class Main {
 
         System.out.println("Salario Anual empleado 1: " +em1.SalarioAnual());
         System.out.println("Salario Anual empleado 2: " +em2.SalarioAnual());
-        System.out.printf("Aumento empleado 2: ", +em2.Aumento());
-        System.out.printf("Aumento empleado 1: ", +em1.Aumento());
+        System.out.printf("Aumento empleado 2: " +em2.Aumento());
+        System.out.printf("Aumento empleado 1: " +em1.Aumento());
 
     }
 
