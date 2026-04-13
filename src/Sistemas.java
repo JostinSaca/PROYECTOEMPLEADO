@@ -15,10 +15,18 @@ public class Sistemas {
         String nombre= sc.next();
         System.out.print("Ingrese el Apellido Paterno:");
         String apellidoP = sc.next();
-        System.out.print("Ingrese su salario Mensual:");
-        double salarioM = sc.nextDouble();
-        Empleado emp = new Empleado(nombre, apellidoP, salarioM);
-        return emp;
+         double salarioM;
+        do {
+            System.out.print("Ingrese su salario Mensual: ");
+            salarioM = sc.nextDouble();
+
+            if (salarioM <= 0) {
+                System.out.println("Error: salario no válido.");
+            }
+
+        } while (salarioM < 0);
+
+        return new Empleado(nombre, apellidoP, salarioM);
     }
     public Empleado informacionEmpleado2(){
         System.out.println("Ingrese los datos del Usuario 2:");
@@ -26,10 +34,18 @@ public class Sistemas {
         String nombre= sc.next();
         System.out.print("Ingrese el Apellido Paterno:");
         String apellidoP = sc.next();
-        System.out.print("Ingrese su salario Mensual:");
-        double salarioM = sc.nextDouble();
-        Empleado emp = new Empleado(nombre, apellidoP, salarioM);
-        return emp;
+         double salarioM;
+        do {
+            System.out.print("Ingrese su salario Mensual: ");
+            salarioM = sc.nextDouble();
+
+            if (salarioM <= 0) {
+                System.out.println("Error: salario no válido.");
+            }
+
+        } while (salarioM < 0);
+
+        return new Empleado(nombre, apellidoP, salarioM);
     }
 
 
